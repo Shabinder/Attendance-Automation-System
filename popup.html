@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attendance Automation System</title>
+    
+    <style>
+        form {
+            background-color: #FFF;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            padding: 0px;
+            text-align:center;
+        }
+        label {
+            color: #333;
+            text-align: left;
+            float:left;
+        }
+       .myButton {
+            box-shadow: 0px 1px 0px 0px #f0f7fa;
+            background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
+            background-color:#33bdef;
+            border-radius:9px;
+            border:1px solid #057fd0;
+            display:inline-block;
+            cursor:pointer;
+            color:#ffffff;
+            font-family:Arial;
+            font-size:16px;
+            font-weight:bold;
+            padding:7px 17px;
+            margin: 5px;
+            text-decoration:none;
+            text-shadow:0px -1px 0px #5b6178;
+        }
+        .myButton:hover {
+            background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
+            background-color:#019ad2;
+        }
+        .myButton:active {
+            position:relative;
+            top:1px;
+        }
+        footer{
+            text-align:right;
+            margin-top:4px;
+        }
+        p{
+            text-align: center;
+        }
+        header{
+            text-align: center;
+        }
+        .css-input {
+            padding: 5px;
+            font-size: 16px;
+            border-width: 1px;
+            border-color: #CCCCCC;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-style: solid;
+            border-radius: 0px;
+            box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+            text-shadow: 0px 0px 5px rgba(66,66,66,.75);
+            width: 60px;
+        }
+        .css-input:focus {
+            outline:none;
+        }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 14px;
+            
+        }
+
+            /* Hide default HTML checkbox */
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+            /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 14px;
+            width: 14px;
+            left: 0px;
+            bottom: 0px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(16px);
+            -ms-transform: translateX(16px);
+            transform: translateX(16px);
+        }
+
+            /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<header><h1>Attendance Automation System!</h1></header><hr/>
+<body>
+    <p>Compatible with <strong>Zoom</strong> & <strong>Google Meet.</strong></p><hr/>
+    <form>
+        <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
+            <label style="float: left;" for="rolllen"><h4>Enter Roll Number length:</h4></label>
+            <input style="float: right;" type="number" id="rolllen" class="css-input"/>
+        </div>
+       
+        <label  class="switch"> 
+            <input id="add_sname" type="checkbox">
+            <span class="slider round"></span>
+        </label>
+        <label style="margin-left: 15px; margin-bottom: 10px; font-weight: 500;" for="add_sname">Add Sender Name.</label>
+       <div id="time_div">
+            <label  class="switch"> 
+                <input id="add_time" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <label style="margin-left: 15px; margin-bottom: 10px;font-weight: 500;" for="add_time">Add Time of Message.</label>
+        </div>
+
+        <input type="button" id="myBtn" class="myButton" value="Take Attendance"/><br/>
+    </form>
+    <script src="popup.js"></script>
+</body>
+<footer>by: <strong>Shabinder</strong></footer>
+</html>
