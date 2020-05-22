@@ -5,6 +5,14 @@
     <title>Attendance Automation System</title>
     
     <style>
+        
+        body{
+            font-family: helvetica;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            outline: none;
+        }
         form {
             background-color: #FFF;
             border-top-left-radius: 10px;
@@ -19,24 +27,22 @@
         }
        .myButton {
             box-shadow: 0px 1px 0px 0px #f0f7fa;
-            background:linear-gradient(to bottom, #33bdef 5%, #019ad2 100%);
-            background-color:#33bdef;
-            border-radius:9px;
-            border:1px solid #057fd0;
+            background-color:transparent;
+            border-radius:30px;
+            border:3px solid orangered;
             display:inline-block;
             cursor:pointer;
-            color:#ffffff;
-            font-family:Arial;
+            color:orangered;
             font-size:16px;
             font-weight:bold;
             padding:7px 17px;
             margin: 5px;
             text-decoration:none;
-            text-shadow:0px -1px 0px #5b6178;
         }
         .myButton:hover {
-            background:linear-gradient(to bottom, #019ad2 5%, #33bdef 100%);
-            background-color:#019ad2;
+        background-color: orangered;
+            color: white;
+             box-shadow: 0px 0px 5px orangered;
         }
         .myButton:active {
             position:relative;
@@ -55,7 +61,7 @@
         .css-input {
             padding: 5px;
             font-size: 16px;
-            border-width: 1px;
+           
             border-color: #CCCCCC;
             background-color: #FFFFFF;
             color: #000000;
@@ -65,14 +71,22 @@
             text-shadow: 0px 0px 5px rgba(66,66,66,.75);
             width: 60px;
         }
+        a{
+            
+        }
+        a:hover{
+            color: orangered !important ;
+        }
         .css-input:focus {
             outline:none;
         }
         .switch {
             position: relative;
             display: inline-block;
-            width: 30px;
-            height: 14px;
+            width: 40px;
+            height: 20px;
+            padding: 2px;
+            margin: 10px;
             
         }
 
@@ -91,7 +105,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: #ccc;
+            background-color: orange;
             -webkit-transition: .4s;
             transition: .4s;
         }
@@ -99,27 +113,27 @@
         .slider:before {
             position: absolute;
             content: "";
-            height: 14px;
-            width: 14px;
+            height: 25px;
+            width: 25px;
             left: 0px;
             bottom: 0px;
-            background-color: white;
+            background-color: #212121;
             -webkit-transition: .4s;
             transition: .4s;
         }
 
         input:checked + .slider {
-            background-color: #2196F3;
+            background-color: #7BE495;
         }
 
         input:focus + .slider {
-            box-shadow: 0 0 1px #2196F3;
+            box-shadow: 0 0 2px #2196F3;
         }
 
         input:checked + .slider:before {
-            -webkit-transform: translateX(16px);
-            -ms-transform: translateX(16px);
-            transform: translateX(16px);
+            -webkit-transform: translateX(25px);
+            -ms-transform: translateX(25px);
+            transform: translateX(25px);
         }
 
             /* Rounded sliders */
@@ -130,33 +144,55 @@
         .slider.round:before {
             border-radius: 50%;
         }
+        .heading{
+            text-align: center;
+            border-bottom: solid 4px orange;
+        }
+        .heading p{
+            font-size: 20px;
+            padding: -10px;
+            
+            
+        }
+        .button-design {
+            width: 100%;
+            text-align: center;
+            margin: auto;
+            display: inline-block;
+            
+}
     </style>
 </head>
-<header><h1>Attendance Automation System!</h1></header><hr/>
 <body>
-    <p>Compatible with <strong>Zoom</strong> & <strong>Google Meet.</strong></p><hr/>
+    <div class = "heading">
+    <p>Attendance Automation System</p>
+    </div>
+    <p style="font-size: 20px;border-bottom: solid 4px #7BE495;margin:0px 0px;padding:8px; ">Compatible with <br><strong>Zoom</strong> & <strong>Google Meet.</strong></p>
     <form>
         <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
-            <label style="float: left;" for="rolllen"><h4>Enter Roll Number length:</h4></label>
+            <label style="float: left;font-size: 15px; margin-top:0px; margin-right: 10px ;padding-top: 0px;" for="rolllen"><h4>Enter Roll Number length:</h4></label>
             <input style="float: right;" type="number" id="rolllen" class="css-input"/>
         </div>
-       
+        <div class="button-design">
         <label  class="switch"> 
             <input id="add_sname" type="checkbox">
             <span class="slider round"></span>
         </label>
-        <label style="margin-left: 15px; margin-bottom: 10px; font-weight: 500;" for="add_sname">Add Sender Name.</label>
+        <label for="add_sname" style="font-size: 20px; padding: 10px; text-align: center;">Add Sender Name.</label>
+        </div>
+        <div class="button-design">
        <div id="time_div">
+           
             <label  class="switch"> 
                 <input id="add_time" type="checkbox">
                 <span class="slider round"></span>
             </label>
-            <label style="margin-left: 15px; margin-bottom: 10px;font-weight: 500;" for="add_time">Add Time of Message.</label>
+            <label style="font-size: 20px; padding: 8px; text-align: center;" for="add_time">Add Time of Message.</label>
         </div>
-
+        </div>
         <input type="button" id="myBtn" class="myButton" value="Take Attendance"/><br/>
     </form>
     <script src="popup.js"></script>
 </body>
-<footer>by: <strong>Shabinder</strong></footer>
+    <footer><p style="float: right ; font-weight: 400;">Developed by: <strong><a style="text-decoration: none;color: darkblue;" href="https://github.com/Shabinder/">Shabinder</a></strong></p></footer>
 </html>
