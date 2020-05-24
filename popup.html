@@ -5,12 +5,17 @@
     <title>Attendance Automation System</title>
     
     <style>
-        
+        .heading p{
+            margin-top: 20px;
+            margin-bottom: 15px;
+            padding: 0px;   
+            font-size: 23px;
+            font-weight: 500;
+        }
         body{
             font-family: helvetica;
-            width: 300px;
-            padding: 10px;
-            margin: 10px;
+            width: 250px;
+            margin: 6px;
             outline: none;
         }
         form {
@@ -71,9 +76,7 @@
             text-shadow: 0px 0px 5px rgba(66,66,66,.75);
             width: 60px;
         }
-        a{
-            
-        }
+       
         a:hover{
             color: orangered !important ;
         }
@@ -83,8 +86,8 @@
         .switch {
             position: relative;
             display: inline-block;
-            width: 40px;
-            height: 20px;
+            width: 35px;
+            height: 12px;
             padding: 2px;
             margin: 10px;
             
@@ -108,13 +111,14 @@
             background-color: orange;
             -webkit-transition: .4s;
             transition: .4s;
+ 
         }
 
         .slider:before {
             position: absolute;
             content: "";
-            height: 25px;
-            width: 25px;
+            height: 15px;
+            width: 15px;
             left: 0px;
             bottom: 0px;
             background-color: #212121;
@@ -131,9 +135,9 @@
         }
 
         input:checked + .slider:before {
-            -webkit-transform: translateX(25px);
-            -ms-transform: translateX(25px);
-            transform: translateX(25px);
+            -webkit-transform: translateX(24px);
+            -ms-transform: translateX(24px);
+            transform: translateX(24px);
         }
 
             /* Rounded sliders */
@@ -148,12 +152,7 @@
             text-align: center;
             border-bottom: solid 4px orange;
         }
-        .heading p{
-            font-size: 20px;
-            padding: -10px;
-            
-            
-        }
+         
         .button-design {
             width: 100%;
             text-align: center;
@@ -167,7 +166,7 @@
     <div class = "heading">
     <p>Attendance Automation System</p>
     </div>
-    <p style="font-size: 20px;border-bottom: solid 4px #7BE495;margin:0px 0px;padding:8px; ">Compatible with <br><strong>Zoom</strong> & <strong>Google Meet.</strong></p>
+    <p style="font-size: 17px;border-bottom: solid 4px #7BE495;margin:0px 0px;padding:8px; ">Compatible with <br><strong>Zoom</strong> & <strong>Google Meet.</strong></p>
     <form>
         <div style="display:flex; flex-direction: row; justify-content: center; align-items: center">
             <label style="float: left;font-size: 15px; margin-top:0px; margin-right: 10px ;padding-top: 0px;" for="rolllen"><h4>Enter Roll Number length:</h4></label>
@@ -178,7 +177,7 @@
             <input id="add_sname" type="checkbox">
             <span class="slider round"></span>
         </label>
-        <label for="add_sname" style="font-size: 20px; padding: 10px; text-align: center;">Add Sender Name.</label>
+        <label for="add_sname" style="font-size: 17px; padding: 7px; text-align: center;">Add Sender Name.</label>
         </div>
         <div class="button-design">
        <div id="time_div">
@@ -187,7 +186,7 @@
                 <input id="add_time" type="checkbox">
                 <span class="slider round"></span>
             </label>
-            <label style="font-size: 20px; padding: 8px; text-align: center;" for="add_time">Add Time of Message.</label>
+            <label style="font-size: 17px; padding: 7px; text-align: center;" for="add_time">Add Time of Message.</label>
         </div>
         </div>
         <input type="button" id="myBtn" class="myButton" value="Take Attendance"/><br/>
