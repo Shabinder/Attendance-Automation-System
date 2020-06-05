@@ -1,6 +1,6 @@
 # ATTENDANCE-AUTOMATION-SYSTEM
 
-It is a **Chrome Extension** which help in taking attendance of all presentees in a Meeting Session of *Google Meet or Zoom*.
+It is a **Browser (Tested on Chrome & Firefox) Extension** which help in taking attendance of all presentees in a Meeting Session of *Google Meet or Zoom*.
 
 
 ## Installation
@@ -9,15 +9,14 @@ It is a **Chrome Extension** which help in taking attendance of all presentees i
 
 2.Extract it at a feasible location.
 
-3.Open **chrome://extensions/** in Chrome.
+3.Open **chrome://extensions/** in Chrome or **about:debugging#/runtime/this-firefox** in Firefox.
 
-4.Enable Developer Options _(Top-Right toggle)_.  
+4.a) Chrome Steps :Enable Developer Options _(Top-Right toggle)_. & Click on Load Unpacked _(Top-Left Button)_. 
+      Select your extracted Directory.
+      
+4.b) Firefox Steps : Load temporary extensions & select Manifest json. 
 
-5.Click on Load Unpacked _(Top-Left Button)_.
-
-6.Select your extracted Directory.
-
-7.You are **All set!**.
+5.You are **All set!**.
 ## Usage
 
 You will be greeted with New Logo next to your URL bar and upon clicking on it a brand new **Pop Up** will show up wih following Options -
@@ -51,6 +50,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
  
 
 
-**Credits**: StackOverflow (various snippets), Google Chrome.
+**Credits**: StackOverflow (various snippet Firefox/Chrome).
 
 **JavaScript + HTML + CSS**
