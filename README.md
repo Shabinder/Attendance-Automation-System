@@ -5,18 +5,19 @@ It is a **Browser (Tested on Chrome & Firefox) Extension** which help in taking 
 
 ## Installation
 
-1.Clone this Repo in your Local storage or Download this Repo as a zip.
+**a)In Firefox**- Get *Extension* from **[Mozilla Firefox Add-On Store!](https://addons.mozilla.org/en-US/firefox/addon/attendance-automation-system/)**
+            
+**b)In Chrome -**
 
-2.Extract it at a feasible location.
+      1.Clone this Repo in your Local storage or Download this Repo as a zip.
 
-3.Open **chrome://extensions/** in Chrome or **about:debugging#/runtime/this-firefox** in Firefox.
+      2.Extract it at a feasible location.
 
-4.a) Chrome Steps :Enable Developer Options _(Top-Right toggle)_. & Click on Load Unpacked _(Top-Left Button)_. 
-      Select your extracted Directory.
-      
-4.b) Firefox Steps : Load temporary extensions & select Manifest json. 
+      3.->Enable Developer Options (Top-Right toggle).
+        ->Click on Load Unpacked (Top-Left Button). 
+        ->Select your extracted Directory.
 
-5.You are **All set!**.
+      4.You are All set!.
 ## Usage
 
 You will be greeted with New Logo next to your URL bar and upon clicking on it a brand new **Pop Up** will show up wih following Options -
