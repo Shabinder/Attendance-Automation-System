@@ -8,8 +8,9 @@ It is a **Browser (Tested on Chrome & Firefox) Extension** which help in taking 
 **a)In Firefox**- Get *Extension* from **[Mozilla Firefox Add-On Store!](https://addons.mozilla.org/en-US/firefox/addon/attendance-automation-system/)**
             
 **b)In Chrome -**
+[Latest Release.](https://github.com/Shabinder/Attendance-Automation-System/releases)
 
-      1.Clone this Repo in your Local storage or Download this Repo as a zip.
+      1.Download Latest Release.
 
       2.Extract it at a feasible location.
 
