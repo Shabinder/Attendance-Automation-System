@@ -48,6 +48,7 @@ _Output will download immediately to you local storage as a **Text file**._
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change/add.
+only valid pull requests will be accepted. Spammy PR's will be reported
  
 
 
