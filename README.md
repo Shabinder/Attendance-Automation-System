@@ -42,7 +42,7 @@ _Output will download immediately to you local storage as a **Text file**._
 3. Various Customizable Output Setting.
 4. EASY-TO-USE UI.
 
-![alt text](https://raw.githubusercontent.com/sinhasamarth/Attendance-Automation-System/master/UI.PNG"UI")
+<img src = "https://raw.githubusercontent.com/sinhasamarth/Attendance-Automation-System/master/UI.PNG">
 
  
 
