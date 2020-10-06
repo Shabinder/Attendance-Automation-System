@@ -1,23 +1,24 @@
 # ATTENDANCE-AUTOMATION-SYSTEM
 
-It is a **Chrome Extension** which help in taking attendance of all presentees in a Meeting Session of *Google Meet or Zoom*.
+It is a **Browser (Tested on Chrome & Firefox) Extension** which help in taking attendance of all presentees in a Meeting Session of *Google Meet or Zoom*.
 
 
 ## Installation
 
-1.Clone this Repo in your Local storage or Download this Repo as a zip.
+**a)In Firefox**- Get *Extension* from **[Mozilla Firefox Add-On Store!](https://addons.mozilla.org/en-US/firefox/addon/attendance-automation-system/)**
+            
+**b)In Chrome -**
+[Latest Release.](https://github.com/Shabinder/Attendance-Automation-System/releases)
 
-2.Extract it at a feasible location.
+      1.Download Latest Release.
 
-3.Open **chrome://extensions/** in Chrome.
+      2.Extract it at a feasible location.
 
-4.Enable Developer Options _(Top-Right toggle)_.  
+      3.->Enable Developer Options (Top-Right toggle).
+        ->Click on Load Unpacked (Top-Left Button). 
+        ->Select your extracted Directory.
 
-5.Click on Load Unpacked _(Top-Left Button)_.
-
-6.Select your extracted Directory.
-
-7.You are **All set!**.
+      4.You are All set!.
 ## Usage
 
 You will be greeted with New Logo next to your URL bar and upon clicking on it a brand new **Pop Up** will show up wih following Options -
@@ -44,7 +45,6 @@ _Output will download immediately to you local storage as a **Text file**._
 
 <img src = "https://raw.githubusercontent.com/sinhasamarth/Attendance-Automation-System/master/UI.PNG">
 
- 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change/add.
@@ -52,6 +52,6 @@ only valid pull requests will be accepted. Spammy PR's will be reported
  
 
 
-**Credits**: StackOverflow (various snippets), Google Chrome.
+**Credits**: StackOverflow (various snippet Firefox/Chrome).
 
 **JavaScript + HTML + CSS**
