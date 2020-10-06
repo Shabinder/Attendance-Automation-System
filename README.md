@@ -43,12 +43,12 @@ _Output will download immediately to you local storage as a **Text file**._
 3. Various Customizable Output Setting.
 4. EASY-TO-USE UI.
 
-![alt text](https://raw.githubusercontent.com/Shabinder/Attendance-Automation-System/master/UI-ScreenShot.png "UI")
+<img src = "https://raw.githubusercontent.com/sinhasamarth/Attendance-Automation-System/master/UI.PNG">
 
- 
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change/add.
+only valid pull requests will be accepted. Spammy PR's will be reported
  
 
 
